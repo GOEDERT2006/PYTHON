@@ -6,18 +6,37 @@
 
 .container{
     background-color: #333;
-    border: 3px solid red;
+    border: 3px solid rgb(0, 0, 0);
     padding: 15px;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-areas: 
+    'h h h'
+    's c c'
+    'f f f';
+    /* grid-template-columns: auto;
     height: 50vh;
     grid-template-rows: auto;
     gap: 10px;
+    justify-content: center;
+    align-items: center; */
+    
 }
 
 .container div{
-    background-color: #ccc;
+    background-color: rgb(255, 0, 212);
     padding: 20px;
-    border: 1px solid blue;
+    border: 1px solid rgb(0, 0, 0);
 
+}
+#header{
+    grid-area: h;
+}
+#sideBar{
+    grid-area: s;
+}
+#content{
+    grid-area: c;
+}
+#footer{
+    grid-area: f;
 }
